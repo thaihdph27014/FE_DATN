@@ -1,7 +1,7 @@
 import { createBrowserRouter, Navigate } from "react-router-dom";
 
 
-import HomePage from "./pages/homepage";
+
 import TourPage from "./pages/TourPage";
 
 export const router = createBrowserRouter([
