@@ -1,11 +1,18 @@
 import { createBrowserRouter, Navigate } from "react-router-dom";
+import HomePage from "./pages/homepage";
+import TourPage from "./pages/TourPage";
 
-import HomePage from "./homepage";
 export const router = createBrowserRouter([
-    {
-        path: "/",
-        element: <div><HomePage /></div>,
+  {
+    path: "/",
+    element: <div><HomePage /></div>,
+  }
+,
+    {path: "/tour",element:<TourPage/>},
+    {path: "/tour",element:<TourPage/>},
+    {path: "/tour",element:<TourPage/>},
+    {path: "/tour",element:<TourPage/>},
     
-    },
-    { path: "*", element: "Not Found Page" },
+  
+  { path: "*", element: "Not Found Page" },
 ]);
