@@ -3,7 +3,12 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {},
+
   },
+  colors: {
+    'hahah': '#f9f9f9',
+  
+},
   plugins: [],
 }
 
