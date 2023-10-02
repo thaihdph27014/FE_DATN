@@ -1,11 +1,15 @@
-import React from 'react'
+import React from 'react';
 
-type Props = {}
+type Props = {};
 
-const tourPage = (props: Props) => {
+const TourPage: React.FC<Props> = () => {
   return (
-    <div>tourpage</div>
-  )
-}
+    <div>
+      <h1>Tour Page</h1>
+      <p>This is the Tour Page.</p>
+      <p>You can add more content and components here.</p>
+    </div>
+  );
+};
 
-export default tourPage
+export default TourPage;
