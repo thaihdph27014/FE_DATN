@@ -1,19 +1,21 @@
 import { createBrowserRouter, Navigate } from "react-router-dom";
-import LayoutWebsite from "./components/layouts/LayoutWebsite";
-import DetailPage from "./pages/Client/detail";
-import Contact from "./pages/Client/contact";
+
+
+import HomePage from "./pages/homepage";
+import TourPage from "./pages/TourPage";
 
 export const router = createBrowserRouter([
-    {
-        path: "/",element:<LayoutWebsite/>
-    },
-    {
-        path: "/detail",element:<DetailPage/>
-    },
-
-    {
-        path: "/lienhe",element:<Contact/>
-    },
-
-    { path: "*", element: "Not Found Page" },
+  {
+    path: "/",
+    element: <div><HomePage /></div>,
+  }
+,
+    {path: "/tour",element:<TourPage/>},
+    {path: "/tour",element:<TourPage/>},
+    {path: "/tour",element:<TourPage/>},
+    {path: "/tour",element:<TourPage/>},
+    
+  
+  { path: "*", element: "Not Found Page" },
 ]);
+
