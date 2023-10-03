@@ -1,5 +1,12 @@
 import React from "react";
-import { FaBeer, FaFlag, FaCarSide, FaLongArrowAltDown } from "react-icons/fa";
+import {
+  FaBeer,
+  FaFlag,
+  FaCarSide,
+  FaLongArrowAltDown,
+  FaRegHeart,
+  FaStar,
+} from "react-icons/fa";
 type Props = {};
 
 const DetailPage = (props: Props) => {
@@ -28,7 +35,7 @@ const DetailPage = (props: Props) => {
     <div className="container mx-auto ">
       <div className="Menu  h-10 bg-black"></div>
       {/* Header trên ội dung dưới*/}
-      <div className="Detail   bg-gray-200 h-[1500px]">
+      <div className="Detail   bg-[#f9f9f9] h-[1500px]">
         <div className="container mx-auto">
           <div className="Title flex ml-[120px] justify-between py-10">
             <div className="title">
@@ -57,10 +64,27 @@ const DetailPage = (props: Props) => {
               </button>
             </div>
           </div>
+          <div className="rate ml-[120px] mb-5 mt-[-25px] flex gap-2">
+            <h2 className="text-yellow-300 text-[25px]">
+              <FaStar />
+            </h2>
+            <h2 className="text-yellow-300 text-[25px]">
+              <FaStar />
+            </h2>
+            <h2 className="text-yellow-300 text-[25px]">
+              <FaStar />
+            </h2>
+            <h2 className="text-yellow-300 text-[25px]">
+              <FaStar />
+            </h2>
+            <h2 className="text-yellow-300 text-[25px]">
+              <FaStar />
+            </h2>
+          </div>
           <div className="Image ml-[120px] gap-5 flex">
             <div>
               <img
-                src="https://media.travel.com.vn/Combo/img_07092023_293d942d-58ab-4d01-8fb4-26d014de51f9_Untitled.png"
+                src="https://media.travel.com.vn/tour/tfd_220701022713_187185.jpg"
                 style={radius}
               />
             </div>
@@ -70,18 +94,18 @@ const DetailPage = (props: Props) => {
                 {" "}
                 <img
                   style={radius1}
-                  src="https://media.travel.com.vn/Combo/Slides/slide_img_290420225b85494b-8707-4be6-9b7b-f09791503fca.jpg"
+                  src="https://media.travel.com.vn/tour/tfd_220701023049_247289.jpg"
                   alt=""
                 />
                 <img
                   style={radius1}
-                  src="https://media.travel.com.vn/Combo/Slides/slide_img_290420225b85494b-8707-4be6-9b7b-f09791503fca.jpg"
+                  src="https://media.travel.com.vn/tour/tfd_220701023656_254440.jpg"
                   alt=""
                 />{" "}
               </div>
               <div className="mt-5">
                 <img
-                  src="https://media.travel.com.vn/Combo/img_07092023_293d942d-58ab-4d01-8fb4-26d014de51f9_Untitled.png"
+                  src="https://media.travel.com.vn/destination/dc_211112_GRAND%20WORLD%20(4).jpg"
                   style={radius2}
                 />
               </div>
@@ -336,51 +360,163 @@ const DetailPage = (props: Props) => {
             <p className=" font-bold text-[#2D4271] text-[25px] text-center ">
               Có thể quý khách sẽ thích
             </p>
-            <div className="ml-[120px] w-[1320px] grid grid-cols-4">
+            <div className="ml-[120px] w-[1320px] grid grid-cols-4 py-5">
               <div className="item h-[500px] w-[310px] rounded ">
-                <div className="img">
-                  <img style={img1} src="https://media.travel.com.vn/destination/tf_230620051651_690667_Bai%20Bien.jpg" alt="" />
+                <div className="img img-container">
+                  <img
+                    className="image"
+                    style={img1}
+                    src="https://media.travel.com.vn/destination/tf_230620051651_690667_Bai%20Bien.jpg"
+                    alt=""
+                  />
+                  <div className="icon-overlay">
+                    {/* Chèn icon ở đây */}
+                    <a href="">
+                      <h2>
+                        <FaRegHeart />
+                      </h2>
+                    </a>
+                  </div>
                 </div>
-                <div className="content px-3 py-3">
+                <div className="content px-3 py-3 text-[#2D4271] ">
                   <p>26/10/2023 - Giờ đi: 05:00</p>
                   <p>Phan Thiết - Mũi Né - Hòn Rơm - Đồi Cát Bay </p>
                   <p>Nơi khởi hành TP. Hồ Chí Minh</p>
                   <p className="mt-4 text-red-500">499,000 ₫</p>
+                  <button
+                    type="button"
+                    className="text-white bg-red-500 hover:bg-white hover:text-black focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                  >
+                    <svg
+                      className="w-3.5 h-3.5 mr-2"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 18 21"
+                    >
+                      <path d="M15 12a1 1 0 0 0 .962-.726l2-7A1 1 0 0 0 17 3H3.77L3.175.745A1 1 0 0 0 2.208 0H1a1 1 0 0 0 0 2h.438l.6 2.255v.019l2 7 .746 2.986A3 3 0 1 0 9 17a2.966 2.966 0 0 0-.184-1h2.368c-.118.32-.18.659-.184 1a3 3 0 1 0 3-3H6.78l-.5-2H15Z" />
+                    </svg>
+                    Đặt ngay
+                  </button>
                 </div>
               </div>
               <div className="item h-[500px] w-[310px] rounded ">
-                <div className="img">
-                  <img style={img1} src="https://media.travel.com.vn/destination/tf_230620051651_690667_Bai%20Bien.jpg" alt="" />
+                <div className="img img-container">
+                  <img
+                    className="image"
+                    style={img1}
+                    src="https://media.travel.com.vn/destination/tf_230620051651_690667_Bai%20Bien.jpg"
+                    alt=""
+                  />
+                  <div className="icon-overlay">
+                    {/* Chèn icon ở đây */}
+                    <a href="">
+                      <h2>
+                        <FaRegHeart />
+                      </h2>
+                    </a>
+                  </div>
                 </div>
-                <div className="content px-3 py-3">
+                <div className="content px-3 py-3 text-[#2D4271] ">
                   <p>26/10/2023 - Giờ đi: 05:00</p>
                   <p>Phan Thiết - Mũi Né - Hòn Rơm - Đồi Cát Bay </p>
                   <p>Nơi khởi hành TP. Hồ Chí Minh</p>
                   <p className="mt-4 text-red-500">499,000 ₫</p>
+                  <button
+                    type="button"
+                    className="text-white bg-red-500 hover:bg-white hover:text-black focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                  >
+                    <svg
+                      className="w-3.5 h-3.5 mr-2"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 18 21"
+                    >
+                      <path d="M15 12a1 1 0 0 0 .962-.726l2-7A1 1 0 0 0 17 3H3.77L3.175.745A1 1 0 0 0 2.208 0H1a1 1 0 0 0 0 2h.438l.6 2.255v.019l2 7 .746 2.986A3 3 0 1 0 9 17a2.966 2.966 0 0 0-.184-1h2.368c-.118.32-.18.659-.184 1a3 3 0 1 0 3-3H6.78l-.5-2H15Z" />
+                    </svg>
+                    Đặt ngay
+                  </button>
                 </div>
               </div>
               <div className="item h-[500px] w-[310px] rounded ">
-                <div className="img">
-                  <img style={img1} src="https://media.travel.com.vn/destination/tf_230620051651_690667_Bai%20Bien.jpg" alt="" />
+                <div className="img img-container">
+                  <img
+                    className="image"
+                    style={img1}
+                    src="https://media.travel.com.vn/destination/tf_230620051651_690667_Bai%20Bien.jpg"
+                    alt=""
+                  />
+                  <div className="icon-overlay">
+                    {/* Chèn icon ở đây */}
+                    <a href="">
+                      <h2>
+                        <FaRegHeart />
+                      </h2>
+                    </a>
+                  </div>
                 </div>
-                <div className="content px-3 py-3">
+                <div className="content px-3 py-3 text-[#2D4271] ">
                   <p>26/10/2023 - Giờ đi: 05:00</p>
                   <p>Phan Thiết - Mũi Né - Hòn Rơm - Đồi Cát Bay </p>
                   <p>Nơi khởi hành TP. Hồ Chí Minh</p>
                   <p className="mt-4 text-red-500">499,000 ₫</p>
+                  <button
+                    type="button"
+                    className="text-white bg-red-500 hover:bg-white hover:text-black focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                  >
+                    <svg
+                      className="w-3.5 h-3.5 mr-2"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 18 21"
+                    >
+                      <path d="M15 12a1 1 0 0 0 .962-.726l2-7A1 1 0 0 0 17 3H3.77L3.175.745A1 1 0 0 0 2.208 0H1a1 1 0 0 0 0 2h.438l.6 2.255v.019l2 7 .746 2.986A3 3 0 1 0 9 17a2.966 2.966 0 0 0-.184-1h2.368c-.118.32-.18.659-.184 1a3 3 0 1 0 3-3H6.78l-.5-2H15Z" />
+                    </svg>
+                    Đặt ngay
+                  </button>
                 </div>
               </div>
               <div className="item h-[500px] w-[310px] rounded ">
-                <div className="img">
-                  <img style={img1} src="https://media.travel.com.vn/destination/tf_230620051651_690667_Bai%20Bien.jpg" alt="" />
+                <div className="img img-container">
+                  <img
+                    className="image"
+                    style={img1}
+                    src="https://media.travel.com.vn/destination/tf_230620051651_690667_Bai%20Bien.jpg"
+                    alt=""
+                  />
+                  <div className="icon-overlay">
+                    {/* Chèn icon ở đây */}
+                    <a href="">
+                      <h2>
+                        <FaRegHeart />
+                      </h2>
+                    </a>
+                  </div>
                 </div>
-                <div className="content px-3 py-3">
+                <div className="content px-3 py-3 text-[#2D4271] ">
                   <p>26/10/2023 - Giờ đi: 05:00</p>
                   <p>Phan Thiết - Mũi Né - Hòn Rơm - Đồi Cát Bay </p>
                   <p>Nơi khởi hành TP. Hồ Chí Minh</p>
                   <p className="mt-4 text-red-500">499,000 ₫</p>
+                  <button
+                    type="button"
+                    className="text-white bg-red-500 hover:bg-white hover:text-black focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                  >
+                    <svg
+                      className="w-3.5 h-3.5 mr-2"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 18 21"
+                    >
+                      <path d="M15 12a1 1 0 0 0 .962-.726l2-7A1 1 0 0 0 17 3H3.77L3.175.745A1 1 0 0 0 2.208 0H1a1 1 0 0 0 0 2h.438l.6 2.255v.019l2 7 .746 2.986A3 3 0 1 0 9 17a2.966 2.966 0 0 0-.184-1h2.368c-.118.32-.18.659-.184 1a3 3 0 1 0 3-3H6.78l-.5-2H15Z" />
+                    </svg>
+                    Đặt ngay
+                  </button>
                 </div>
-              </div>  
+              </div>
             </div>
           </div>
         </div>
