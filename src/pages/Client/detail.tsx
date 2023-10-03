@@ -1,5 +1,5 @@
 import React from "react";
-import { FaBeer, FaFlag } from "react-icons/fa";
+import { FaBeer, FaFlag, FaCarSide, FaLongArrowAltDown } from "react-icons/fa";
 type Props = {};
 
 const DetailPage = (props: Props) => {
@@ -18,12 +18,17 @@ const DetailPage = (props: Props) => {
     height: "325px",
     width: "580px  ",
   };
+  const img1 = {
+    borderRadius: "5px",
+    height: "210px",
+    width: "309px  ",
+  };
 
   return (
     <div className="container mx-auto ">
       <div className="Menu  h-10 bg-black"></div>
       {/* Header trên ội dung dưới*/}
-      <div className="Detail   bg-gray-200 h-[2000px]">
+      <div className="Detail   bg-gray-200 h-[1500px]">
         <div className="container mx-auto">
           <div className="Title flex ml-[120px] justify-between py-10">
             <div className="title">
@@ -82,7 +87,7 @@ const DetailPage = (props: Props) => {
               </div>
             </div>
           </div>
-          <div className="Description gap-28 flex ml-[120px] mt-5">
+          <div className="Description gap-28 flex ml-[120px] mt-5 py-4">
             <div className="Desc text-[#2D4271] text-[15px]">
               <p>
                 Đà Lạt tinh khôi, trong lành giữa rừng thông cùng muôn <br />{" "}
@@ -171,9 +176,212 @@ const DetailPage = (props: Props) => {
               </div>
             </div>
           </div>
-          <div className="text-center font-bold text-[#2D4271] text-[25px] py-5"> <h2>Lịch trình</h2></div>
-          <div className="ml-[120px] mr-[115px] lichtring h-[500px] bg-white border-[1px] rounded border-gray-400 ">
+          <div className="bg-white container">
+            <div className="text-center font-bold text-[#2D4271] text-[25px] py-5">
+              {" "}
+              <h2>Lịch trình</h2>
+            </div>
+            <div className="ml-[120px] mr-[115px] lichtring h-[500px] bg-white border-[1px] rounded border-gray-400 "></div>
+            <div className="ml-[120px] chitiet">
+              <div className="row flex justify-between">
+                <div className="left">
+                  <h2 className="mb-4 font-bold text-[#2D4271] text-[25px] py-5">
+                    Chi tiết tour
+                  </h2>
+                  <div className="h-[300px] bg-slate-100 w-[590px] rounded">
+                    <p className="font-semibold text-[#2D4271] text-[20px] pt-8 px-4">
+                      {" "}
+                      Thông tin hãng Xe
+                    </p>
+                    <div className="flex justify-between">
+                      {" "}
+                      <p className="text-[#2D4271] px-4 mt-4 ">
+                        Ngày đi -(5/10/20323){" "}
+                      </p>{" "}
+                      <p className="mt-4">|</p>{" "}
+                      <p className="text-[#2D4271] px-4 mt-4 mr-[150px] ">
+                        {" "}
+                        Ngày về (5/10/20323){" "}
+                      </p>
+                    </div>
+                    <div className="flex">
+                      <div className="text-blue-700 px-4 mt-4 flex gap-2 ">
+                        T.P Hồ Chí Minh{" "}
+                        <h2 className="mt-1">
+                          <FaCarSide />
+                        </h2>{" "}
+                        Điểm đến{" "}
+                      </div>
+                      <div className="text-blue-700 px-4 mt-4 flex gap-2 ">
+                        Điểm đến
+                        <h2 className="mt-1">
+                          <FaCarSide />
+                        </h2>{" "}
+                        T.P Hồ Chí Minh{" "}
+                      </div>
+                    </div>
 
+                    <p className="mt-4 ml-2 mr-2">
+                      {" "}
+                      <hr />
+                    </p>
+                    <p className="font-semibold text-[#2D4271] text-[20px] pt-8 px-4">
+                      {" "}
+                      Thông tin hướng dẫn viên
+                    </p>
+                    <p className="text-[#2D4271] px-4 mt-4 ">
+                      Hướng dẫn đoàn: Thái deptrai{" "}
+                    </p>
+                    <p className="text-[#2D4271] px-4 mt-4 ">
+                      Hướng dẫn tiên: Thái deptrai1{" "}
+                    </p>
+                  </div>
+                </div>
+                <div className="right mr-48">
+                  <h2 className="mb-4 mr-[140px] font-bold text-[#2D4271] text-[25px] py-5">
+                    Giá tour & phụ thu phòng đơn
+                  </h2>
+                  <div className="h-[300px] bg-slate-100 w-[590px] rounded">
+                    <div className="grid grid-cols-3 gap-2">
+                      <p className="font-semibold text-[#2D4271] text-[20px] pt-8 px-4">
+                        {" "}
+                        Loại khách
+                      </p>{" "}
+                      <p className="font-semibold text-[#2D4271] text-[20px] pt-8 px-4">
+                        {" "}
+                        Giá tour
+                      </p>
+                      <p className="font-semibold text-[#2D4271] text-[20px] pt-8 px-4">
+                        {" "}
+                        Land tour
+                      </p>
+                    </div>
+                    <div className="flex justify-between">
+                      {" "}
+                      <p className="text-[#2D4271] px-4 mt-4 ">
+                        Người lớn (Từ 12 tuổi trở lên){" "}
+                      </p>{" "}
+                      <p className="mt-4">499,000 đ </p>{" "}
+                      <p className="text-[#2D4271] px-4 mt-4 mr-[150px] ">
+                        {" "}
+                        499,000 đ
+                      </p>
+                    </div>
+                    <div className="flex justify-between">
+                      {" "}
+                      <p className="text-[#2D4271] px-4 mt-4 ">Trẻ em </p>{" "}
+                      <p className="mt-4 text-red-500 ml-10">299,000 đ </p>{" "}
+                      <p className=" px-4 mt-4 mr-[150px] ml-5 text-red-500">
+                        {" "}
+                        299,000 đ
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="h-[300px] container mx-auto bg-white">
+            <p className="title font-bold text-[#2D4271] text-[25px] text-center py-5 px-5">
+              Những thông tin cần lưu ý
+            </p>
+            <div className="ml-[120px]">
+              <div className="flex gap-12">
+                <div className="w-[570px] ">
+                  {" "}
+                  <button className="bg-gray-300 w-[570px] justify-between hover:bg-gray-400 text-[#2D4271] text-center font-bold py-2 px-4 rounded inline-flex items-center">
+                    <span>Giá tour bao gồm</span>
+                    <h2>
+                      <FaLongArrowAltDown />
+                    </h2>
+                  </button>
+                  <button className="mt-5 bg-gray-300 w-[570px] justify-between hover:bg-gray-400 text-[#2D4271] text-center font-bold py-2 px-4 rounded inline-flex items-center">
+                    <span>Giá tour bao gồm</span>
+                    <h2>
+                      <FaLongArrowAltDown />
+                    </h2>
+                  </button>
+                  <button className="bg-gray-300 mt-5 w-[570px] justify-between hover:bg-gray-400 text-[#2D4271] text-center font-bold py-2 px-4 rounded inline-flex items-center">
+                    <span>Giá tour bao gồm</span>
+                    <h2>
+                      <FaLongArrowAltDown />
+                    </h2>
+                  </button>
+                </div>
+                <div>
+                  {" "}
+                  <button className=" bg-gray-300 w-[570px] justify-between hover:bg-gray-400 text-[#2D4271] text-center font-bold py-2 px-4 rounded inline-flex items-center">
+                    <span>Giá tour bao gồm</span>
+                    <h2>
+                      <FaLongArrowAltDown />
+                    </h2>
+                  </button>
+                  <button className="bg-gray-300 mt-5 w-[570px] justify-between hover:bg-gray-400 text-[#2D4271] text-center font-bold py-2 px-4 rounded inline-flex items-center">
+                    <span>Giá tour bao gồm</span>
+                    <h2>
+                      <FaLongArrowAltDown />
+                    </h2>
+                  </button>
+                  <button className="bg-gray-300 w-[570px] mt-5 justify-between hover:bg-gray-400 text-[#2D4271] text-center font-bold py-2 px-4 rounded inline-flex items-center">
+                    <span>Giá tour bao gồm</span>
+                    <h2>
+                      <FaLongArrowAltDown />
+                    </h2>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="Cate  ">
+            <p className=" font-bold text-[#2D4271] text-[25px] text-center ">
+              Có thể quý khách sẽ thích
+            </p>
+            <div className="ml-[120px] w-[1320px] grid grid-cols-4">
+              <div className="item h-[500px] w-[310px] rounded ">
+                <div className="img">
+                  <img style={img1} src="https://media.travel.com.vn/destination/tf_230620051651_690667_Bai%20Bien.jpg" alt="" />
+                </div>
+                <div className="content px-3 py-3">
+                  <p>26/10/2023 - Giờ đi: 05:00</p>
+                  <p>Phan Thiết - Mũi Né - Hòn Rơm - Đồi Cát Bay </p>
+                  <p>Nơi khởi hành TP. Hồ Chí Minh</p>
+                  <p className="mt-4 text-red-500">499,000 ₫</p>
+                </div>
+              </div>
+              <div className="item h-[500px] w-[310px] rounded ">
+                <div className="img">
+                  <img style={img1} src="https://media.travel.com.vn/destination/tf_230620051651_690667_Bai%20Bien.jpg" alt="" />
+                </div>
+                <div className="content px-3 py-3">
+                  <p>26/10/2023 - Giờ đi: 05:00</p>
+                  <p>Phan Thiết - Mũi Né - Hòn Rơm - Đồi Cát Bay </p>
+                  <p>Nơi khởi hành TP. Hồ Chí Minh</p>
+                  <p className="mt-4 text-red-500">499,000 ₫</p>
+                </div>
+              </div>
+              <div className="item h-[500px] w-[310px] rounded ">
+                <div className="img">
+                  <img style={img1} src="https://media.travel.com.vn/destination/tf_230620051651_690667_Bai%20Bien.jpg" alt="" />
+                </div>
+                <div className="content px-3 py-3">
+                  <p>26/10/2023 - Giờ đi: 05:00</p>
+                  <p>Phan Thiết - Mũi Né - Hòn Rơm - Đồi Cát Bay </p>
+                  <p>Nơi khởi hành TP. Hồ Chí Minh</p>
+                  <p className="mt-4 text-red-500">499,000 ₫</p>
+                </div>
+              </div>
+              <div className="item h-[500px] w-[310px] rounded ">
+                <div className="img">
+                  <img style={img1} src="https://media.travel.com.vn/destination/tf_230620051651_690667_Bai%20Bien.jpg" alt="" />
+                </div>
+                <div className="content px-3 py-3">
+                  <p>26/10/2023 - Giờ đi: 05:00</p>
+                  <p>Phan Thiết - Mũi Né - Hòn Rơm - Đồi Cát Bay </p>
+                  <p>Nơi khởi hành TP. Hồ Chí Minh</p>
+                  <p className="mt-4 text-red-500">499,000 ₫</p>
+                </div>
+              </div>  
+            </div>
           </div>
         </div>
       </div>
