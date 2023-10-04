@@ -6,6 +6,7 @@ import HomePage from "./pages/homepage";
 import Signup from "./auth/signup";
 import SignIn from "./auth/signin";
 import DetailPage from "./pages/Client/detail";
+import BookTour from "./pages/Client/Book_tour";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -19,5 +20,6 @@ export const router = createBrowserRouter([
     {path: "/signin",element:<SignIn/>},
     {path: "/signup",element:<Signup/>},
    {path:"/:id/tour",element:<DetailPage/>},
+   {path:"/booktour",element:<BookTour/>},
   { path: "*", element: "Not Found Page" },
 ]);
